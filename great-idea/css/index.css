@@ -1,3 +1,5 @@
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -18,7 +20,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -54,7 +56,7 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    ;
 }
 
 h1, h2, h3, h4, h5 {
@@ -62,5 +64,197 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+font-family: 'Titillium Web', sans-serif
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+	width: 80%;
+	margin: auto;
+}
+
+/* header */
+header {
+	display:flex;
+	margin: 2%;
+}
+
+header nav {
+	width: 48%;
+	display: flex;
+	justify-content: space-around;
+}
+
+header nav a {
+	color: lightgray;
+	text-decoration: none;
+}
+
+header .image {
+	display: flex;
+	width: 48%;
+	justify-content: flex-end;
+}
+
+/* top content */
+.top-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 8%;	
+	
+	
+}
+
+.top-content-left {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	justify-content: center;
+	align-items: center;
+	margin: 5%;
+}
+
+.top-content-left h2 {
+	font-size: 60px;
+	text-align: center;
+}
+
+.top-content-left button {
+	background-color: white;
+	border: 2px solid gray;
+	width: 30%;	
+}
+
+.top-content-right {
+	justify-content: center;
+}
+
+/* middle content */
+
+.middle-content {
+	display: flex;
+	margin: 2%;
+	padding-top: 3%;
+	border-top: 2px solid gray;
+}
+
+.middle-content-left {
+	width: 50%;
+}
+
+.middle-content-right {
+	margin-left: 2%;
+	width: 50%;
+}
+
+/* middle image */
+
+.mid-image {
+	display: flex;
+	justify-content: center;
+}
+
+/* bottom content */
+.bottom-content {
+	display: flex;
+	margin: 2%;
+	padding-bottom: 3%;
+}
+
+/* footer */
+.footer-1 {
+	display: flex;
+	flex-direction: column;
+	margin: 2%;
+	padding-top: 3%;
+	border-top: 2px solid gray;
+}
+
+.footer-1 p {
+	margin-top: 2%;
+}
+.footer-1 .copyright {
+	margin-left: 43%;
+}
+
+/* --------------- Begin Services Page */
+
+p, a, ul {
+	font-weight: 600;
+}
+
+div .services-image {
+	display:flex;
+	justify-content: center;
+	width: 100%;
+}
+
+
+/* top content */
+.top {
+	display: flex;
+	flex-direction: column;
+	padding: 2% 0;
+	border-bottom: 1px solid black;
+}
+
+.top h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/* middle content */
+
+.middle {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	/* padding: 2% 0; */
+}
+
+.middle div {
+	background-color: rgba(220,220,220, 0.2);
+	border: 1px solid black;
+	padding: 5%;
+	margin: 2%;
+	width: 45%;
+}
+
+.middle button {
+	margin-top: 10%;
+	width: 40%;
+	background-color: white;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
+}
+
+/* bottom content */
+
+.bottom {
+	display: flex;
+	justify-content: space-between;
+	padding: 2% 0;
+	border-top: 2px solid black;
+}
+
+.bottom div {
+	width: 45%;
+}
+
+.bottom ul {
+	list-style-type: square;
+	margin: 2% 4%;
+}
+
+.bottom ul li {
+	margin: 2% 0;
+}
+
+
+/* footer */
+
+.services-page {
+	display: flex;
+	justify-content: center;
+	padding: 2% 0;
+}
+
