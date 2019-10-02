@@ -56,7 +56,7 @@ table {
 
 html, body {
     height: 100%;
-    ;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-font-family: 'Titillium Web', sans-serif
+
 
 body {
 	width: 80%;
@@ -153,6 +153,10 @@ header .image {
 	justify-content: center;
 }
 
+.middle-img {
+	width: 100%;
+}
+
 /* bottom content */
 .bottom-content {
 	display: flex;
@@ -182,9 +186,13 @@ p, a, ul {
 	font-weight: 600;
 }
 
-div .services-image {
+.services-image {
 	display:flex;
 	justify-content: center;
+	/* margin: auto; */
+}
+
+.services-header-img {
 	width: 100%;
 }
 
@@ -207,12 +215,11 @@ div .services-image {
 .middle {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	/* padding: 2% 0; */
+	justify-content: space-evenly;
 }
 
 .middle div {
-	background-color: rgba(220,220,220, 0.2);
+	background-color: rgba(220,220,220, 0.4);
 	border: 1px solid black;
 	padding: 5%;
 	margin: 2%;
@@ -225,6 +232,9 @@ div .services-image {
 	background-color: white;
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 600;
+	border-radius: 4px;
+	padding: 2%;
+	border: 1px solid black;
 }
 
 /* bottom content */
@@ -248,6 +258,7 @@ div .services-image {
 .bottom ul li {
 	margin: 2% 0;
 }
+
 
 
 /* footer */
